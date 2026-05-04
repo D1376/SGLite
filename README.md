@@ -45,6 +45,10 @@ Planned or possible future work:
 - [ ] More Quantization Methods: add GPTQ ([paper](https://arxiv.org/abs/2210.17323)) and SmoothQuant ([paper](https://arxiv.org/abs/2211.10438)) support with explicit calibration, config loading, and kernel selection paths
 - [ ] Speculative Decoding: add draft-model based token proposal and target-model verification to reduce decode latency while preserving the target model's output distribution; see [Fast Inference from Transformers via Speculative Decoding](https://arxiv.org/abs/2211.17192)
 
+### Deployment
+
+- [ ] Edge Device Support: deploy SGLite on edge hardware (e.g. NVIDIA Jetson, embedded GPU boards) by reducing memory footprint, supporting low-power inference modes, and validating on resource-constrained environments
+
 ## Platform Support
 
 SGLite currently targets **Linux only** on NVIDIA GPUs. The project depends on CUDA-based kernels and Linux-specific runtime assumptions, so native Windows and macOS are not supported.
