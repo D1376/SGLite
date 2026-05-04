@@ -100,8 +100,12 @@ curl http://127.0.0.1:1376/v1/chat/completions \
 ### 5. Use Interactive CLI Mode
 
 ```bash
-python -m sglite --model "Qwen/Qwen3-0.6B" --cli
+python -m sglite --model "Qwen/Qwen3-4B-AWQ" --cli
 ```
+
+The demo below shows `Qwen3-4B-AWQ` running on a single RTX 5090:
+
+![CLI demo: switching to Qwen3-4B-AWQ](assets/4B-AWQ-CLI-DEMO.gif)
 
 CLI mode supports:
 
