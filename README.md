@@ -81,7 +81,7 @@ uv pip install -e .
 python -m sglite --model "Qwen/Qwen3-0.6B"
 
 # Multi-GPU tensor parallel serving
-python -m sglite --model "meta-llama/Llama-3.1-70B-Instruct" --tp-size 4 --port 30000
+python -m sglite --model "meta-llama/Llama-3.1-70B-Instruct" --tp-size 4 --port 1376
 ```
 
 By default the server listens on `127.0.0.1:1376`.
