@@ -1,0 +1,25 @@
+"""Activation helpers used by model blocks."""
+
+from __future__ import annotations
+
+from typing import TYPE_CHECKING
+
+if TYPE_CHECKING:
+    import torch
+
+
+def silu_and_mul(x: torch.Tensor, out: torch.Tensor | None = None):
+    """Apply the SiLU-gated activation used by feed-forward blocks."""
+    from flashinfer import silu_and_mul
+
+    return silu_and_mul(x, out=out)
+
+
+def gelu_and_mul(x: torch.Tensor, out: torch.Tensor | None = None):
+    """Apply the GELU-gated activation used by feed-forward blocks."""
+    from flashinfer import gelu_and_mul
+
+    return gelu_and_mul(x, out=out)
+
+
+__all__ = ["silu_and_mul", "gelu_and_mul"]

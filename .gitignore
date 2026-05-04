@@ -1,0 +1,48 @@
+# pycache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# installed packages
+*.dist-info/
+*.egg-info/
+
+# json files
+*.json
+*.jsonl
+
+# profiling data
+*.nsys-rep
+*.ncu-rep
+
+# binaries
+build/
+dist/
+*.tar.gz
+
+# virtual environment
+.venv/
+venv/
+env/
+
+# clangd config
+.clangd
+
+# .vscode
+.vscode/
+.coverage
+
+benchmark
+tests
+
+.DS_Store
+.dockerignore
+.pre-commit-config.yaml
+tutorials
+Dockerfile
+LICENSE
+CHANGE.md
+uv.lock
+CLAUDE.md
+AGENTS.md
+/technical-architecture
