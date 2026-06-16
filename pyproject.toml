@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sglite"
+version = "0.1.0"
+requires-python = ">=3.10"
+dependencies = [
+    "accelerate",
+    "huggingface-hub",
+    "msgpack",
+    "modelscope",
+    "numpy",
+    "torch==2.9.1",
+    "transformers>=4.56.0,<=4.57.3",
+    "flashinfer-python==0.5.3",
+    "pyzmq",
+    "uvicorn",
+    "fastapi",
+    "prompt-toolkit",
+    "openai",
+    "psutil",
+    "pydantic",
+    "safetensors",
+    "starlette",
+    "tqdm",
+    "triton",
+    "apache-tvm-ffi>=0.1.4",
+    "sgl-kernel>=0.3.20",
+    "nvidia-cutlass-dsl>=4.3.3",
+    "quack-kernels",
+]
+
+[project.optional-dependencies]
+benchmark = [
+    "pyarrow",
+]
+
+[tool.setuptools]
+package-dir = {"" = "python"}
+
+[tool.setuptools.packages.find]
+where = ["python"]
+
+[tool.setuptools.package-data]
+sglite = ["kernels/csrc/**/*"]
